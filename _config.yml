@@ -18,8 +18,8 @@ email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   Yet another Jekyll theme. It is designed for business purpose and ported by
   Melvin Ch'ng.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tmudireddy.github.io/Elavon" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: "Elavon/" # the subpath of your site, e.g. /blog
+url: "https://tmudireddy.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Company Information
 company_name: Elavon
