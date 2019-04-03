@@ -194,7 +194,7 @@ address {
 .nav-pills > li.selected > a:hover,
 .nav-pills > li.selected > a:focus {
   color: #ffffff;
-  background-color: #1bbd9b;
+  background-color: #1F64EE;
 }
 /*
 * ==========================================================================
@@ -218,7 +218,7 @@ address {
 .nav-pills-centered > .nav-pills > li > a.selected,
 .nav-pills-centered > .nav-pills > li > span.selected {
   color: #ffffff;
-  background-color: #1bbd9b;
+  background-color: #1F64EE;
 }
 /*
 * ==========================================================================
@@ -351,7 +351,7 @@ address {
 .sidebar-right{
     font-size: 13px;
     font-weight: bold;
-    color:#84d7bd;
+    color:#1F64EE;
 }
 
 .featured-img{
@@ -407,7 +407,7 @@ p.blog-text{
   }
 }
 .feedback-section .address-section .address-icon {
-  color: #1bbd9b;
+  color: #1F64EE;
   font-size: 48px;
   line-height: 48px;
   margin-bottom: 30px;
@@ -440,7 +440,7 @@ p.blog-text{
   margin-top: 50px;
 }
 .services-section .services-icon {
-  color: #1bbd9b;
+  color: #1F64EE;
   margin-bottom: 30px;
 }
 .services-section .services-title {
@@ -464,7 +464,7 @@ p.blog-text{
 .services-icon .fa:hover{
     padding: 0 10px 0 10px;
     color: white;
-    background: #1BBD9B;
+    background: #1F64EE;
     border-radius: 3px; 
     transition:.4s;  
 }
