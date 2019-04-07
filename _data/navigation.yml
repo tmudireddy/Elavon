@@ -1,0 +1,17 @@
+- title: Home
+  url: /index.html
+- title: About
+  url: /about.html
+- title: Blog
+  url: /blog.html
+- title: All Apps
+  url: /team.html
+  sublinks:
+    - title: Apps by Device
+      url: /devices.html
+    - title: separator
+    - title: Apps by Functionality
+      url: /function.html
+    - title: separator
+    - title: Apps By Industry
+      url: /industry.html

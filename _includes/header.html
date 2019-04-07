@@ -1,6 +1,6 @@
 <!-- Header -->
 <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
-  <div class="container">
+<!--   <div class="container">
 
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -10,12 +10,49 @@
       <span class="icon-bar"></span>
     </button>
 
-  </div>
+  </div> -->
 
   <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav pull-right">
-      <li class="active">
-        <a href="index.html">Home</a>
+      {% assign links = site.data.navigation %}
+      {% for link in links %}
+        {% assign class = nil %}
+        <script>
+          console.log("Site: {{ site.url}}");
+          console.log("Page: {{ page.url }}");
+          console.log("Link: {{ link.url }}");
+        </script>
+        {% if page.url contains link.url %}
+            {% assign class = 'active' %}
+        {% endif %}
+        {% if link.sublinks %}
+          <li class="{{ class }}">
+               <a href="{{ site.baseurl }}{{ link.url }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+               <ul class="dropdown-menu dropdown-menu-right">
+                   {% for sublink in link.sublinks %}
+                       {% if sublink.title == 'separator' %}
+                           <li role="separator" class="divider"></li>
+                       {% else %}
+                           <li>
+                               <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                           </li>
+                       {% endif %}
+                   {% endfor %}
+               </ul>
+           </li>
+       {% else %}
+           <li class="{{ class }}">
+               <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+           </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</nav>
+           
+           
+           
+           
+           <!-- >Home</a>
       </li>
       <li>
         <a href="about.html">About Poynt</a>
@@ -28,7 +65,7 @@
       </li>
     </ul>
   </div>
-  </div>
-</nav>
+   </div>
+</nav> -->
 
 <!-- End Header -->
