@@ -4,9 +4,12 @@
   url: /about.html
 - title: Blog
   url: /blog.html
-- title: All Apps
+- title: Apps
   url: /team.html
   sublinks:
+    - title: All Apps
+      url: /team.html
+    - title: separator
     - title: Apps by Device
       url: /devices.html
     - title: separator
